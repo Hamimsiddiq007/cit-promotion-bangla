@@ -12,7 +12,7 @@
 }
 
 .container {
-  @apply  max-w-285  mx-auto px-3 xl:px-0;
+  @apply  max-w-285  mx-auto px-5 xl:px-0;
 }
 
 .header-text {
@@ -45,11 +45,7 @@ ul li .nav-item {
   background: #FFFFFF; /* পুরো ব্যাকগ্রাউন্ড সাদা */
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
 
 .hero-flex {
   display: flex;
