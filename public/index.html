@@ -1,463 +1,593 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header id="heder" class="">
-      <!-- al mahmud -->
-      <nav>
-        <div class="container py-4">
-          <div class="flex justify-between items-center">
-            <div class="max-w-[25%]">
-              <img src="/public/Images/navlogo.png" alt="Navber Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="/src/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="heder" class="">
+    <!-- al mahmud -->
+    <nav>
+      <div class="container py-4">
+        <div class="flex justify-between items-center">
+          <div class="max-w-[25%]">
+            <img src="/public/Images/navlogo.png" alt="Navber Logo" />
+          </div>
+          <div class="max-w-[55%]">
+            <ul class="flex gap-10">
+              <li><a href="#" class="nav-item">Title</a></li>
+              <li><a href="#" class="nav-item">Title</a></li>
+              <li><a href="#" class="nav-item">Title</a></li>
+              <li><a href="#" class="nav-item">Title</a></li>
+              <li><a href="#" class="nav-item">Title</a></li>
+            </ul>
+          </div>
+          <div class="max-w-[20%]">
+            <button class="btn">
+              Get Enroll <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-flex items-center">
+
+          <div class="hero-left">
+            <span class="top-tittle">
+              <img src="/public/Images/fire.png" alt="fire" />
+              Some overline text will be here with excitement
+            </span>
+
+            <h1 class="Hero-title">
+              Title will be here
+              <span class="Hero-title1">Graphics Design</span>
+            </h1>
+
+            <div class="Hero-ctabtn">
+              <button class="cta-small green">CTA Label <img src="/public/Images/Hero/hero-btn1.png" alt="" /></button>
+              <button class="cta-small orange">CTA Label <img src="/public/Images/Hero/hero-btn2.png" alt="" /></button>
+              <button class="cta-small red">CTA Label <img src="/public/Images/Hero/hero-btn3.png" alt="" /></button>
             </div>
-            <div class="max-w-[55%]">
-              <ul class="flex gap-10">
-                <li><a href="#" class="nav-item">Title</a></li>
-                <li><a href="#" class="nav-item">Title</a></li>
-                <li><a href="#" class="nav-item">Title</a></li>
-                <li><a href="#" class="nav-item">Title</a></li>
-                <li><a href="#" class="nav-item">Title</a></li>
-              </ul>
-            </div>
-            <div class="max-w-[20%]">
-              <button class="btn">
-                Get Enroll <i class="fa-solid fa-arrow-right"></i>
+
+            <p class="Hero-description">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
+              maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus
+              ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis
+              posuere maecenas interdum sit cras.
+            </p>
+
+            <div class="flex-buttons">
+              <button class="btn-primary">
+                CTA Label Here <img src="/public/Images/Hero/hero-btn3.png" alt="" />
+              </button>
+              <button class="btn-secondary">
+                Download Curriculum <img src="/public/Images/Hero/hero-btn4.png" alt="" />
               </button>
             </div>
           </div>
-        </div>
-      </nav>
 
-      <section class="hero-section">
-  <div class="container">
-    <div class="hero-flex items-center">
-      
-      <div class="hero-left">
-        <span class="top-tittle">
-          <img src="/public/Images/fire.png" alt="fire" />
-          Some overline text will be here with excitement
-        </span>
-        
-        <h1 class="Hero-title">
-          Title will be here
-          <span class="Hero-title1">Graphics Design</span>
-        </h1>
+          <div class="hero-right">
+            <div class="animated-border-box">
+              <div class="form-content">
+                <h2 class="form-title">Book Your Seat Now</h2>
+                <p class="form-subtitle">Start building your professional career for free</p>
 
-        <div class="Hero-ctabtn">
-          <button class="cta-small green">CTA Label <img src="/public/Images/Hero/hero-btn1.png" alt="" /></button>
-          <button class="cta-small orange">CTA Label <img src="/public/Images/Hero/hero-btn2.png" alt="" /></button>
-          <button class="cta-small red">CTA Label <img src="/public/Images/Hero/hero-btn3.png" alt="" /></button>
-        </div>
+                <div class="input-group">
+                  <label>Your Full Name</label>
+                  <div class="input-field">
+                    <img src="/public/Images/user-icon.png" alt="">
+                    <input type="text" placeholder="Enter Here">
+                  </div>
+                </div>
 
-        <p class="Hero-description">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. 
-        </p>
+                <div class="input-group">
+                  <label>Email Address</label>
+                  <div class="input-field">
+                    <img src="/public/Images/mail-icon.png" alt="">
+                    <input type="email" placeholder="Enter Here">
+                  </div>
+                </div>
 
-        <div class="flex-buttons">
-          <button class="btn-primary">
-            CTA Label Here <img src="/public/Images/Hero/hero-btn3.png" alt="" />
-          </button>
-          <button class="btn-secondary">
-            Download Curriculum <img src="/public/Images/Hero/hero-btn4.png" alt="" />
-          </button>
+                <div class="input-group">
+                  <label>Phone Number</label>
+                  <div class="input-field">
+                    <img src="/public/Images/phone-icon.png" alt="">
+                    <input type="tel" placeholder="Enter Here">
+                  </div>
+                </div>
+
+                <button class="submit-btn">
+                  CTA Label Here <span>&rarr;</span>
+                </button>
+
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
+  </header>
 
-      <div class="hero-right">
-        <div class="animated-border-box">
-          <div class="form-content">
-            <h2 class="form-title">Book Your Seat Now</h2>
-            <p class="form-subtitle">Start building your professional career for free</p>
+  <section>
+    <!-- sabrina -->
+  </section>
 
-            <div class="input-group">
-              <label>Your Full Name</label>
-              <div class="input-field">
-                <img src="/public/Images/user-icon.png" alt="">
-                <input type="text" placeholder="Enter Here">
-              </div>
-            </div>
+  <!-- fima -->
+  <section class="py-10 font-Inter">
+    <div class="container relative overflow-hidden lg:pt-40 pt-25 md:pt-30 pb-20 ">
+      <!-- Background Curve -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full 
+         bg-gradient-to-t from-white from-90% md:from-90% lg:from-80% 
+         to-[#fbdcdc] rounded-t-full z-0">
+      </div>
 
-            <div class="input-group">
-              <label>Email Address</label>
-              <div class="input-field">
-                <img src="/public/Images/mail-icon.png" alt="">
-                <input type="email" placeholder="Enter Here">
-              </div>
-            </div>
+      <div class="relative z-10 px-4">
 
-            <div class="input-group">
-              <label>Phone Number</label>
-              <div class="input-field">
-                <img src="/public/Images/phone-icon.png" alt="">
-                <input type="tel" placeholder="Enter Here">
-              </div>
-            </div>
-
-            <button class="submit-btn">
-              CTA Label Here <span>&rarr;</span>
-            </button>
-
-            <p class="footer-text">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+            Here Will Be
+            <span class="text-[#DF3636]">Course Module</span>
+          </h2>
+          <p class="mt-4 text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            Felis posuere maecenas interdum sit cras.
+          </p>
         </div>
+
+        <!-- Modules Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <!-- Active Card (Red) -->
+          <div class="border border-red-300  rounded-xl p-5">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 flex items-center justify-center rounded-md bg-red-100 text-red-500">
+                  P
+                </div>
+                <h4 class="font-semibold text-gray-800">
+                  Module title will be here
+                </h4>
+              </div>
+              <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+              Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+              Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+              Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+            </p>
+          </div>
+
+          <!-- Active Card (Blue) -->
+          <div class="border border-blue-300  rounded-xl p-5">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 flex items-center justify-center rounded-md bg-blue-100 text-blue-500">
+                  P
+                </div>
+                <h4 class="font-semibold text-gray-800">
+                  Module title will be here
+                </h4>
+              </div>
+              <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+              Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+              Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+              Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+            </p>
+          </div>
+
+          <!-- Collapsed Green -->
+          <div class="border border-green-300 rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-green-100 text-green-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+          <!-- Collapsed Orange -->
+          <div class="border border-orange-300  rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-orange-100 text-orange-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+          <!-- Collapsed Red -->
+          <div class="border border-red-300 rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-red-100 text-red-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+          <!-- Collapsed Blue -->
+          <div class="border border-blue-300  rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-blue-100 text-blue-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+          <!-- Collapsed Green -->
+          <div class="border border-green-300 rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-green-100 text-green-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+          <!-- Collapsed Orange -->
+          <div class="border border-orange-300  rounded-xl p-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 flex items-center justify-center rounded-md bg-orange-100 text-orange-500">
+                P
+              </div>
+              <h4 class="font-semibold text-gray-800">
+                Module title will be here
+              </h4>
+            </div>
+            <span class="text-gray-500 text-lg"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+          <button
+            class="bg-[#DF3636] hover:bg-linear-to-r from-[#DF3636]  to-[#FF8079] transition text-white px-8 py-3 rounded-lg shadow-md">
+            Load More <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
       </div>
 
     </div>
-  </div>
-</section>
-    </header>
 
-    <section><!-- sabrina --></section>
+    <!-- eye catchy banner  -->
+    <div class="relative w-full h-64 sm:h-80 md:h-96 
+         bg-cover bg-center 
+         flex items-center justify-center text-center overflow-hidden"
+      style="background-image: url('/public/Images/graphic_design_banner.png');">
 
-    <section><!-- fima --></section>
+      <!-- Optional Dark Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
-    <!-- ===================== Journey_Roadmap / JIHAD ========================= -->
-    <section>
-      <div class="container">
-        <div class="grid grid-cols-12 grid-rows-2 gap-7 bg-amber-300">
-          <div class="col-span-4 col-start-1 row-span-1 row-start-1">
-            fghddd
-          </div>
-          <div class="col-span-4 col-start-5 row-span-1 row-start-1">dghf</div>
-          <div class="col-span-4 col-start-9 row-span-1 row-start-1">fgd</div>
-          <div class="col-span-6 col-start-1 row-span-1 row-start-2">
-            ytdgdg
-          </div>
-          <div class="col-span-6 col-start-7 row-span-1 row-start-2">
-            rgferdhg
-          </div>
+      <!-- Center Text -->
+      <div class="relative z-10 px-4">
+        <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+          Eye Catchy Graphic Design Banner
+        </h2>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ===================== Journey_Roadmap / JIHAD ========================= -->
+  <section>
+    <div class="container">
+      <div class="grid grid-cols-12 grid-rows-2 gap-7 bg-amber-300">
+        <div class="col-span-4 col-start-1 row-span-1 row-start-1">
+          fghddd
+        </div>
+        <div class="col-span-4 col-start-5 row-span-1 row-start-1">dghf</div>
+        <div class="col-span-4 col-start-9 row-span-1 row-start-1">fgd</div>
+        <div class="col-span-6 col-start-1 row-span-1 row-start-2">
+          ytdgdg
+        </div>
+        <div class="col-span-6 col-start-7 row-span-1 row-start-2">
+          rgferdhg
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section><!-- nayemur rashid --></section>
+  <section>
+    <!-- nayemur rashid -->
+  </section>
 
-    <section><!-- sk omar --></section>
+  <section>
+    <!-- sk omar -->
+  </section>
 
-    <!-- career section start (Hamim) -->
-    <section class="container bg-[#f7f7f7] py-16 px-4">
-      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1
-            class="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
-          >
-            Ready To <br />
-            <span class="text-red-500 italic">Start Your Career</span>
-          </h1>
+  <!-- career section start (Hamim) -->
+  <section class="container bg-[#f7f7f7] py-16 px-4">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+          Ready To <br />
+          <span class="text-red-500 italic">Start Your Career</span>
+        </h1>
 
-          <p class="mt-6 text-gray-600 leading-relaxed max-w-lg">
-            Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-            est at non suscipit. Felis posuere maecenas interdum sit cras.
-            Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-          </p>
-
-          <div
-            class="mt-6 inline-flex items-center gap-2 bg-red-100 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-sm font-medium shadow-sm"
-          >
-            🚨 Limited Seats Available
-          </div>
-
-          <div class="mt-10 bg-[#f4d7d2] rounded-2xl p-6 shadow-sm max-w-md">
-            <img
-              src="./Images/career_banner.png"
-              alt="Design Tools"
-              class="w-full object-contain"
-            />
-          </div>
-        </div>
+        <p class="mt-6 text-gray-600 leading-relaxed max-w-lg">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+          est at non suscipit. Felis posuere maecenas interdum sit cras.
+          Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+        </p>
 
         <div
-          class="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-500 max-w-md w-full mx-auto lg:mx-0"
-        >
-          <h2 class="text-2xl font-semibold text-center text-gray-800">
-            Book Your Seat Now
-          </h2>
+          class="mt-6 inline-flex items-center gap-2 bg-red-100 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+          🚨 Limited Seats Available
+        </div>
 
-          <p class="text-center text-gray-500 text-sm mt-2 mb-6">
-            Start building your professional career for free
+        <div class="mt-10 bg-[#f4d7d2] rounded-2xl p-6 shadow-sm max-w-md">
+          <img src="./Images/career_banner.png" alt="Design Tools" class="w-full object-contain" />
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-500 max-w-md w-full mx-auto lg:mx-0">
+        <h2 class="text-2xl font-semibold text-center text-gray-800">
+          Book Your Seat Now
+        </h2>
+
+        <p class="text-center text-gray-500 text-sm mt-2 mb-6">
+          Start building your professional career for free
+        </p>
+
+        <form class="space-y-4">
+          <label class="" for="text">Your Full Name</label>
+          <input type="text" placeholder="Enter Here"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500" />
+
+          <label for="emai">Email Address</label>
+          <input type="email" placeholder="Enter Here"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500" />
+
+          <label for="number">Phone Number</label>
+          <input type="tel" placeholder="Enter Here"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500" />
+
+          <label for="">Career Goals</label>
+          <input type="text" placeholder="Enter Here"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500" />
+
+          <button type="submit"
+            class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-lg transition duration-300">
+            CTA Label Here →
+          </button>
+        </form>
+
+        <p class="text-center text-xs text-gray-400 mt-4">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- career section end (Hamim) -->
+
+  <section>
+    <div class="heading"></div>
+    <!-- From Uiverse.io by SivarajRathinam -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <input type="radio" id="section1" name="accordion" />
+        <label for="section1" class="accordion-header">
+          <label class="accordion-title">Section 1</label>
+          <div class="accordion-icon">
+            <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+        </label>
+        <div class="content">
+          <p>This is the content for Section 1.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <input checked="" type="radio" id="section2" name="accordion" />
+        <label for="section2" class="accordion-header">
+          <label class="accordion-title">Section 2</label>
+          <div class="accordion-icon">
+            <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+        </label>
+        <div class="content">
+          <p>This is the content for Section 2.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" id="section3" name="accordion" />
+        <label for="section3" class="accordion-header">
+          <label class="accordion-title">Section 3</label>
+          <div class="accordion-icon">
+            <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+        </label>
+        <div class="content">
+          <p>This is the content for Section 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
+    <div class="container flex flex-col gap-y-16">
+      <div class="flex flex-col items-center justify-between border top-footer lg:flex-row gap-y-16">
+        <img src="./images/footer-logo.png" alt="logo" />
+        <div class="flex flex-col items-center gap-2 text-center quires">
+          <p class="pb-2 text-base font-semibold text-white font-Roboto">
+            For Any Queries, Feel Free To Contact Us
           </p>
-
-          <form class="space-y-4">
-            <label class="" for="text">Your Full Name</label>
-            <input
-              type="text"
-              placeholder="Enter Here"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500"
-            />
-
-            <label for="emai">Email Address</label>
-            <input
-              type="email"
-              placeholder="Enter Here"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500"
-            />
-
-            <label for="number">Phone Number</label>
-            <input
-              type="tel"
-              placeholder="Enter Here"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500"
-            />
-
-            <label for="">Career Goals</label>
-            <input
-              type="text"
-              placeholder="Enter Here"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500"
-            />
-
-            <button
-              type="submit"
-              class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-lg transition duration-300"
-            >
-              CTA Label Here →
-            </button>
-          </form>
-
-          <p class="text-center text-xs text-gray-400 mt-4">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- career section end (Hamim) -->
-
-    <section>
-      <div class="heading"></div>
-      <!-- From Uiverse.io by SivarajRathinam -->
-      <div class="accordion">
-        <div class="accordion-item">
-          <input type="radio" id="section1" name="accordion" />
-          <label for="section1" class="accordion-header">
-            <label class="accordion-title">Section 1</label>
-            <div class="accordion-icon">
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+          <div class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base">
+            <div class="flex items-center gap-2 call">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p class="font-semibold font-Roboto">+91 123 456 7890</p>
             </div>
-          </label>
-          <div class="content">
-            <p>This is the content for Section 1.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <input checked="" type="radio" id="section2" name="accordion" />
-          <label for="section2" class="accordion-header">
-            <label class="accordion-title">Section 2</label>
-            <div class="accordion-icon">
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-          </label>
-          <div class="content">
-            <p>This is the content for Section 2.</p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <input type="radio" id="section3" name="accordion" />
-          <label for="section3" class="accordion-header">
-            <label class="accordion-title">Section 3</label>
-            <div class="accordion-icon">
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-          </label>
-          <div class="content">
-            <p>This is the content for Section 3.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-[#2c1b1b] rounded-t-4xl xl:rounded-t-[100px] pt-16 pb-10">
-      <div class="container flex flex-col gap-y-16">
-        <div
-          class="flex flex-col items-center justify-between border top-footer lg:flex-row gap-y-16"
-        >
-          <img src="./images/footer-logo.png" alt="logo" />
-          <div class="flex flex-col items-center gap-2 text-center quires">
-            <p class="pb-2 text-base font-semibold text-white font-Roboto">
-              For Any Queries, Feel Free To Contact Us
-            </p>
-            <div
-              class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base"
-            >
-              <div class="flex items-center gap-2 call">
-                <i class="fa-solid fa-phone-volume"></i>
-                <p class="font-semibold font-Roboto">+91 123 456 7890</p>
-              </div>
-              <div class="flex items-center gap-2 mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p class="font-semibold font-Roboto">7KtQI@example.com</p>
-              </div>
-            </div>
-            <div
-              class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base"
-            >
-              <div class="flex items-center gap-2 call">
-                <i class="fa-solid fa-phone-volume"></i>
-                <p class="font-semibold font-Roboto">+91 123 456 7890</p>
-              </div>
-              <div class="flex items-center gap-2 mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p class="font-semibold font-Roboto">7KtQI@example.com</p>
-              </div>
+            <div class="flex items-center gap-2 mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="font-semibold font-Roboto">7KtQI@example.com</p>
             </div>
           </div>
-          <div class="flex flex-col items-center gap-4 app">
-            <p class="font-semibold text-white font-Roboto">Download App</p>
-            <div class="flex items-center gap-4">
-              <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="qr">
-                  <img
-                    class="w-7 aspect-square"
-                    src="./images/qr.png"
-                    alt="qr"
-                  />
-                </div>
-                <div class="logo">
-                  <i class="text-3xl fa-brands fa-google-play"></i>
-                </div>
-              </div>
-              <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="qr">
-                  <img
-                    class="w-7 aspect-square"
-                    src="./images/qr.png"
-                    alt="qr"
-                  />
-                </div>
-                <div class="logo">
-                  <i class="text-3xl fa-brands fa-apple"></i>
-                </div>
-              </div>
+          <div class="flex items-center gap-6 text-xs text-gray xs:text-sm sm:text-base">
+            <div class="flex items-center gap-2 call">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p class="font-semibold font-Roboto">+91 123 456 7890</p>
+            </div>
+            <div class="flex items-center gap-2 mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="font-semibold font-Roboto">7KtQI@example.com</p>
             </div>
           </div>
         </div>
-        <div class="w-full h-px bg-primary/50"></div>
-        <div
-          class="flex flex-wrap justify-center bottom-footer gap-y-14 gap-x-14 lg:gap-x-0 lg:gap-y-14 xl:gap-14 lg:justify-between"
-        >
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
+        <div class="flex flex-col items-center gap-4 app">
+          <p class="font-semibold text-white font-Roboto">Download App</p>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
+              <div class="qr">
+                <img class="w-7 aspect-square" src="./images/qr.png" alt="qr" />
+              </div>
+              <div class="logo">
+                <i class="text-3xl fa-brands fa-google-play"></i>
+              </div>
             </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card xl:px-10">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">campus 02 - dhanmondi</h2>
-            </div>
-            <div class="address-details">
-              <p>meher plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="flex address-card">
-            <div class="flex items-center gap-1 title">
-              <i class="fa-solid fa-location-dot text-primary"></i>
-              <h2 class="address-title">head office - main campus</h2>
-            </div>
-            <div class="address-details">
-              <p>momtaz plaza, dhanmondi dhaka</p>
-              <p>+91 123 456 7890 , +91 123 456 7890</p>
+            <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
+              <div class="qr">
+                <img class="w-7 aspect-square" src="./images/qr.png" alt="qr" />
+              </div>
+              <div class="logo">
+                <i class="text-3xl fa-brands fa-apple"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="w-full h-px bg-primary/50"></div>
+      <div
+        class="flex flex-wrap justify-center bottom-footer gap-y-14 gap-x-14 lg:gap-x-0 lg:gap-y-14 xl:gap-14 lg:justify-between">
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card xl:px-10">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">campus 02 - dhanmondi</h2>
+          </div>
+          <div class="address-details">
+            <p>meher plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+        <div class="flex address-card">
+          <div class="flex items-center gap-1 title">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <h2 class="address-title">head office - main campus</h2>
+          </div>
+          <div class="address-details">
+            <p>momtaz plaza, dhanmondi dhaka</p>
+            <p>+91 123 456 7890 , +91 123 456 7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script type="module" src="./script.js"></script>
-  </body>
+  <script type="module" src="./script.js"></script>
+</body>
+
 </html>
