@@ -4,12 +4,13 @@
   --font-Inter: "Inter", sans-serif;
   --font-Roboto: "Roboto", sans-serif;
   --color-primary: #DF3636;
-  --text-secondary: "#38435C";
+  --color-secondary: "#38435C";
+  --color-gray: #A9B0B8;
   --breakpoint-xs: 375px;
 }
 
 .container {
-  @apply  max-w-[1140px] mx-auto px-3 xl:px-0;
+  @apply  max-w-285  mx-auto px-3 xl:px-0;
 }
 
 .header-text {
@@ -20,4 +21,15 @@
   @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary ;
 }
 
+@layer footer{
+  .address-card{
+    @apply flex flex-col items-center text-center gap-2 capitalize  ; 
+  }
+  .address-title{
+    @apply text-white font-semibold font-Roboto
+  }
+  .address-details{
+    @apply text-gray font-Inter text-xs font-medium
+  }
+}
 
