@@ -12,6 +12,7 @@
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.2.1"
   }
 }
