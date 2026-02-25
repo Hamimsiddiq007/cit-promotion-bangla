@@ -4,16 +4,16 @@
   --font-Inter: "Inter", sans-serif;
   --font-Roboto: "Roboto", sans-serif;
   --color-primary: #df3636;
-  --color-secondary: #38435C;
+  --color-secondary: #38435c;
   --color-hero-bg: #34a853;
   --color-hero-bg1: #f88513;
   --color-gray: #a9b0b8;
   --breakpoint-xs: 375px;
-  --drop-shadow-3xl: 0 4px 40px rgba(175, 194, 212, 0.2); 
+  --drop-shadow-3xl: 0 4px 40px rgba(175, 194, 212, 0.2);
 }
 
 .container {
-  @apply  px-3 mx-auto max-w-285 xl:px-0;
+  @apply px-3 mx-auto max-w-285 xl:px-0;
 }
 
 .header-text {
@@ -28,9 +28,9 @@ ul li .nav-item {
   @apply text-[16px] font-Roboto font-semibold leading-[150%];
 }
 ul li .nav-item:hover {
-  @apply text-primary transition duration-300
+  @apply text-primary transition duration-300;
 }
-.btn{
+.btn {
   background: var(--color-primary);
   color: #ffffff;
   font-size: 16px;
@@ -82,9 +82,15 @@ ul li .nav-item:hover {
   }
 
   /* Status Colors */
-  .cta-small.green { @apply border border-[#6CE9A6] text-[#027A48]; }
-  .cta-small.orange { @apply border border-[#FEB273] text-[#B93815]; }
-  .cta-small.red { @apply border border-[#FDA29B] text-[#B42318]; }
+  .cta-small.green {
+    @apply border border-[#6CE9A6] text-[#027A48];
+  }
+  .cta-small.orange {
+    @apply border border-[#FEB273] text-[#B93815];
+  }
+  .cta-small.red {
+    @apply border border-[#FDA29B] text-[#B42318];
+  }
 
   /* Description */
   .Hero-description {
@@ -101,7 +107,7 @@ ul li .nav-item:hover {
   }
 
   .btn-secondary {
-    @apply bg-[#1D2939] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer 
+    @apply bg-[#1D2939] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer;
   }
 }
 
@@ -116,9 +122,9 @@ ul li .nav-item:hover {
   }
 
   .animated-border-box::before {
-    content: '';
+    content: "";
     @apply absolute w-[200%] h-[200%] top-[-50%] left-[-50%] animate-[rotateBorder_4s_linear_infinite];
-    background: conic-gradient(#00FFFF, #FF00FF, #FF5C00, #00FFFF);
+    background: conic-gradient(#00ffff, #ff00ff, #ff5c00, #00ffff);
   }
 
   .form-content {
@@ -159,7 +165,9 @@ ul li .nav-item:hover {
 
 /* Animation definition */
 @keyframes rotateBorder {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* --- Responsive Styles --- */
 /* --- Desktop / Large Devices (1024px and up) --- */
@@ -181,7 +189,9 @@ ul li .nav-item:hover {
     width: 100%;
   }
 
-  .top-tittle, .Hero-ctabtn, .flex-buttons {
+  .top-tittle,
+  .Hero-ctabtn,
+  .flex-buttons {
     justify-content: flex-start;
   }
 }
@@ -199,7 +209,9 @@ ul li .nav-item:hover {
     max-width: 100%;
   }
 
-  .top-tittle, .Hero-ctabtn, .flex-buttons {
+  .top-tittle,
+  .Hero-ctabtn,
+  .flex-buttons {
     justify-content: center;
   }
 
@@ -211,16 +223,27 @@ ul li .nav-item:hover {
 
 /* --- Mobile / Small Devices (Below 768px) --- */
 @media (max-width: 768px) {
-  .Hero-title { font-size: 38px; }
-  .Hero-description { font-size: 15px; }
-  .flex-buttons { flex-direction: column; width: 100%; }
-  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .Hero-title {
+    font-size: 38px;
+  }
+  .Hero-description {
+    font-size: 15px;
+  }
+  .flex-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* --- Animation Fix (upor rongeen na hoy) --- */
 .animated-border-box {
   position: relative;
-  padding: 3px; 
+  padding: 3px;
   background: white;
   border-radius: 24px;
   overflow: hidden;
@@ -228,14 +251,21 @@ ul li .nav-item:hover {
 }
 
 .animated-border-box::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200%;
   height: 200%;
   top: -50%;
   left: -50%;
   /* Conic gradient ta border er moto ghurbe */
-  background: conic-gradient(from 0deg, transparent, #E33B32, #FFD700, #E33B32, transparent);
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    #e33b32,
+    #ffd700,
+    #e33b32,
+    transparent
+  );
   animation: rotateBorder 4s linear infinite;
   z-index: -1; /* Former niche thakbe */
 }
@@ -250,13 +280,15 @@ ul li .nav-item:hover {
 }
 
 @keyframes rotateBorder {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Small Devices (Mobile, 640px and up) */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 32px 16px; 
+    padding: 32px 16px;
   }
 
   .Hero-title {
@@ -277,7 +309,8 @@ ul li .nav-item:hover {
     width: 100%;
   }
 
-  .btn-primary, .btn-secondary {
+  .btn-primary,
+  .btn-secondary {
     width: 100%;
     justify-content: center;
   }
@@ -292,13 +325,13 @@ ul li .nav-item:hover {
   .Hero-title {
     font-size: 32px;
   }
-  
+
   .top-tittle {
     font-size: 12px;
     padding: 6px 12px;
   }
 }
-/* From Uiverse.io by SivarajRathinam */ 
+/* From Uiverse.io by SivarajRathinam */
 .accordion {
   width: 300px;
   margin: 0 auto;
@@ -401,17 +434,33 @@ ul li .nav-item:hover {
 }
 
 /* Color Variants */
-.module-red { @apply border-red-300; }
-.module-red .module-icon { @apply bg-red-100 text-red-500; }
+.module-red {
+  @apply border-red-300;
+}
+.module-red .module-icon {
+  @apply bg-red-100 text-red-500;
+}
 
-.module-blue { @apply border-blue-300; }
-.module-blue .module-icon { @apply bg-blue-100 text-blue-500; }
+.module-blue {
+  @apply border-blue-300;
+}
+.module-blue .module-icon {
+  @apply bg-blue-100 text-blue-500;
+}
 
-.module-green { @apply border-green-300; }
-.module-green .module-icon { @apply bg-green-100 text-green-500; }
+.module-green {
+  @apply border-green-300;
+}
+.module-green .module-icon {
+  @apply bg-green-100 text-green-500;
+}
 
-.module-orange { @apply border-orange-300; }
-.module-orange .module-icon { @apply bg-orange-100 text-orange-500; }
+.module-orange {
+  @apply border-orange-300;
+}
+.module-orange .module-icon {
+  @apply bg-orange-100 text-orange-500;
+}
 
 /* Button */
 .module-button {
@@ -421,8 +470,7 @@ ul li .nav-item:hover {
   @apply bg-gradient-to-r from-[#DF3636] to-[#FF8079];
 }
 
-
-/* From Uiverse.io by SivarajRathinam */ 
+/* From Uiverse.io by SivarajRathinam */
 .accordion {
   width: 300px;
   margin: 0 auto;
@@ -474,14 +522,165 @@ ul li .nav-item:hover {
   font-size: 14px;
 }
 
-@layer footer{
-  .address-card{
-    @apply flex flex-col items-center gap-2 text-center capitalize ; 
+@layer footer {
+  .address-card {
+    @apply flex flex-col items-center gap-2 text-center capitalize;
   }
-  .address-title{
-    @apply text-white font-semibold font-Roboto
+  .address-title {
+    @apply text-white font-semibold font-Roboto;
   }
-  .address-details{
-    @apply text-gray font-Inter text-xs font-medium
+  .address-details {
+    @apply text-gray font-Inter text-xs font-medium;
   }
+}
+
+/* -------------------------------------------------------------
+---------------Frequently Asked Questions ----------------------
+---------------------------------------------------------------- */
+
+:root {
+  --coral: #e8453c;
+  --blush: #fff3f3;
+  --rose-border: #ffcbcb;
+  --rose-open-bg: #fff3f3;
+}
+
+/* ── Layout ── */
+.faq-wrapper {
+  width: 100%;
+  max-width: 64rem;
+  position: relative;
+}
+
+.faq-wrapper::before {
+  top: -2.5rem;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  background: #e79a9f;
+  opacity: 0.5;
+}
+
+.faq-wrapper::after {
+  bottom: 0;
+  right: 0;
+  width: 12rem;
+  height: 12rem;
+  background: #fce7f3;
+  opacity: 0.4;
+}
+
+/* ── Header ── */
+.faq-header {
+  font-family: "Inter", serif;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faq-title {
+  font-family: "Inter", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.faq-title em {
+  color: var(--coral);
+  font-style: italic;
+}
+
+.faq-subtitle {
+  font-family: "Inter", serif;
+  color: #6b7280;
+  font-size: 0.95rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── FAQ List ── */
+.faq-list {
+  max-width: 42rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ── FAQ Item ── */
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--rose-border);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    background 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.faq-item:hover {
+  border-color: #f9a8a5;
+}
+
+.faq-item.open {
+  background: var(--rose-open-bg);
+  border-color: #f5c5c3;
+  padding-bottom: 0.5rem;
+}
+
+/* ── FAQ Trigger row ── */
+.faq-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-question {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.faq-icon {
+  color: var(--coral);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  user-select: none;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* ── Answer panel ── */
+.faq-answer {
+  font-family: "Inter", serif;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding-top 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding-top: 0.75rem;
+}
+
+.faq-answer p {
+  font-family: "Inter", serif;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  padding-bottom: 0.5rem;
 }
