@@ -21,25 +21,47 @@
   <body>
     <header id="heder" class="">
       <!-- al mahmud -->
-      <nav>
+      <nav class="relative">
         <div class="container py-4">
           <div class="flex items-center justify-between">
             <div class="max-w-[25%]">
               <img src="/public/Images/navlogo.png" alt="Navber Logo" />
             </div>
-            <div class="max-w-[55%]">
-              <ul class="flex gap-10">
+
+            <div
+              id="nav-menu"
+              class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 md:static md:flex-row md:translate-y-0 md:bg-transparent md:max-w-[55%] md:justify-end"
+            >
+              <div
+                id="close-menu"
+                class="absolute top-6 right-6 text-2xl cursor-pointer md:hidden"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+
+              <ul class="flex flex-col md:flex-row gap-10 items-center">
                 <li><a href="#" class="nav-item">Title</a></li>
                 <li><a href="#" class="nav-item">Title</a></li>
                 <li><a href="#" class="nav-item">Title</a></li>
                 <li><a href="#" class="nav-item">Title</a></li>
                 <li><a href="#" class="nav-item">Title</a></li>
               </ul>
+
+              <div class="md:hidden">
+                <button class="btn">
+                  Get Enroll <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
-            <div class="max-w-[20%]">
+
+            <div class="hidden md:block max-w-[20%]">
               <button class="btn">
                 Get Enroll <i class="fa-solid fa-arrow-right"></i>
               </button>
+            </div>
+
+            <div id="open-menu" class="md:hidden text-2xl cursor-pointer">
+              <i class="fa-solid fa-bars-staggered"></i>
             </div>
           </div>
         </div>
