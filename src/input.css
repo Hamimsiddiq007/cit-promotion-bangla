@@ -18,11 +18,11 @@
 }
 
 .header-text {
-  @apply xs:text-xl  lg:text-4xl xl:text-[56px] leading-tight font-Inter font-extrabold pb-3;
+  @apply xs:text-2xl  lg:text-4xl xl:text-[56px] leading-tight font-Inter font-extrabold pb-3;
 }
 
 .title-text {
-  @apply text-xs xs:text-base md:text-lg font-Roboto text-secondary text-center max-w-200 mx-auto;
+  @apply text-xs xs:text-sm sm:text-base md:text-lg font-Roboto text-secondary text-center max-w-200 mx-auto;
 }
 /* Navber */
 ul li .nav-item {
