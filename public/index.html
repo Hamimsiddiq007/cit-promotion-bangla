@@ -81,7 +81,7 @@
       </nav>
 
       <section
-        class="hero-section bg-no-repeat bg-cover"
+        class="bg-no-repeat bg-cover hero-section"
         style="background-image: url(&quot;./images/Hero.png&quot;)"
       >
         <div class="container">
@@ -182,7 +182,7 @@
 
     <section class="relative">
       <img
-        class="absolute hidden md:block top-1/2 left-1/2 -translate-1/2 max-w-full h-full object-contain -z-10"
+        class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 -z-10"
         src="./images/round.png"
         alt=""
       />
@@ -191,7 +191,7 @@
           class="flex flex-col md:flex-row gap-[8px] md:gap-[16px] justify-center text-center md:text-left"
         >
           <h1
-            class="font-Inter font-extrabold text-xl md:text-4xl lg:text-5xl leading-tight"
+            class="text-xl font-extrabold leading-tight font-Inter md:text-4xl lg:text-5xl"
           >
             Here Will Be
 
@@ -211,9 +211,9 @@
           volutpat lobortis.
         </p>
 
-        <div class="relative flex justify-center items-center">
+        <div class="relative flex items-center justify-center">
           <div
-            class="w-4/5 xl:w-full mask-auto aspect-video rounded-xl border-2 border-primary/40"
+            class="w-4/5 border-2 xl:w-full mask-auto aspect-video rounded-xl border-primary/40"
           >
             <iframe
               width="100%"
@@ -234,7 +234,7 @@
               allowfullscreen
             ></iframe
             ><img
-              class="absolute top-1/2 left-1/2 md:hidden -translate-1/2 max-w-full h-full object-contain -z-10"
+              class="absolute object-contain h-full max-w-full top-1/2 left-1/2 md:hidden -translate-1/2 -z-10"
               src="./images/round.png"
               alt=""
             />
@@ -289,18 +289,18 @@
       </div>
     </section>
 
-    <section class="py-10 font-Inter relative overflow-clip">
+    <section class="relative py-10 font-Inter overflow-clip">
       <div
         class="absolute w-[200%] top-1/12 left-1/2 -translate-x-1/2 aspect-2/1 bg-gradient-to-t from-white from-90% to-[#fbdcdc] rounded-t-full z-0"
       ></div>
-      <div class="module-container container">
+      <div class="container module-container">
         <!-- Background Curve -->
 
         <div class="relative z-10">
           <!-- Heading -->
           <div class="text-center mb-14">
             <h2
-              class="xs:text-2xl md:text-4xl lg:text-6xl leading-tight font-Inter font-extrabold"
+              class="font-extrabold leading-tight xs:text-2xl md:text-4xl lg:text-6xl font-Inter"
             >
               Here Will Be
               <span class="text-[#DF3636] italic">Course Module</span>
@@ -317,8 +317,8 @@
 
           <!-- Expanded Red -->
           <!-- From Uiverse.io by SivarajRathinam -->
-          <div class="accordion grid sm:grid-cols-2 gap-5">
-            <div class="accordion-item border-red-300">
+          <div class="grid gap-5 accordion sm:grid-cols-2">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -333,7 +333,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-blue-300">
+            <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgBlue.png" alt="msg" />
@@ -348,7 +348,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-green-300">
+            <div class="border-green-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgGreen.png" alt="msg" />
@@ -363,7 +363,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-orange-300">
+            <div class="border-orange-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgYello.png" alt="msg" />
@@ -377,7 +377,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-            <div class="accordion-item border-red-300">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -392,7 +392,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-blue-300">
+            <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgBlue.png" alt="msg" />
@@ -406,7 +406,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-            <div class="accordion-item border-green-300">
+            <div class="border-green-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgGreen.png" alt="msg" />
@@ -421,7 +421,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-red-300">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -438,7 +438,7 @@
           </div>
 
           <!-- Load More Button -->
-          <div class="text-center mt-12">
+          <div class="mt-12 text-center">
             <button class="module-button">
               Load More <i class="fa-solid fa-angle-down"></i>
             </button>
@@ -448,7 +448,7 @@
 
       <!-- Eye Catchy Banner -->
       <div
-        class="relative w-full h-64 sm:h-80 md:h-96 bg-cover bg-center flex items-center justify-center text-center overflow-hidden"
+        class="relative flex items-center justify-center w-full h-64 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
         style="
           background-image: url(&quot;./images/graphic_design_banner.png&quot;);
         "
@@ -456,7 +456,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
 
         <div class="relative z-10 px-4">
-          <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
             Eye Catchy Graphic Design Banner
           </h2>
         </div>
@@ -465,10 +465,10 @@
 
     <!------------------  Journey_Roadmap -------------- -->
     <section
-      class="py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32 bg-cover bg-bottom bg-no-repeat"
+      class="py-8 bg-bottom bg-no-repeat bg-cover sm:py-12 md:py-16 lg:py-24 xl:py-32"
       style="background-image: url(&quot;./images/cardBg.png&quot;)"
     >
-      <div class="container mx-auto px-4">
+      <div class="container px-4 mx-auto">
         <!-- Header -->
         <div class="text-center w-full lg:w-[75%] mx-auto mb-12">
           <h1
@@ -487,13 +487,13 @@
 
         <!-- Grid -->
         <!-- Row 1 -->
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-6">
+<div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
 
   <!-- Card 1 -->
   <div class=" p-6 border-t-2 border-l-2 rounded-[20px] border-[#5B8FFF] shadow-lg bg-white">
     <div class="flex items-center md:mb-1 lg:mb-4">
       <div class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]">1</div>
-      <div class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#4285FA] to-transparent rounded"></div>
+      <div class="flex-1 h-1  bg-gradient-to-r from-[#4285FA] to-transparent rounded"></div>
     </div>
     <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
     <p class="text-[#6F7B88] text-[14px] leading-[150%]">
@@ -505,7 +505,7 @@
   <div class="p-6 border-b-2 border-l-2 rounded-[20px] border-[#34A853] shadow-lg bg-white">
     <div class="flex items-center mb-4">
       <div class="w-14 h-14 bg-[#EFF8F2] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#34A853]">2</div>
-      <div class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#34A853] to-transparent rounded"></div>
+      <div class="flex-1 h-1  bg-gradient-to-r from-[#34A853] to-transparent rounded"></div>
     </div>
     <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
     <p class="text-[#6F7B88] text-[14px] leading-[150%]">
@@ -517,7 +517,7 @@
   <div class="p-6 border-t-2 border-r-2 rounded-[20px] border-[#F88513] shadow-lg bg-white">
     <div class="flex items-center mb-4">
       <div class="w-14 h-14 bg-[#FDF5E6] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#F88513]">3</div>
-      <div class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#F88513] to-transparent rounded"></div>
+      <div class="flex-1 h-1  bg-gradient-to-r from-[#F88513] to-transparent rounded"></div>
     </div>
     <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
     <p class="text-[#6F7B88] text-[14px] leading-[150%]">
@@ -528,13 +528,13 @@
 </div>
 
 <!-- Row 2 -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 
   <!-- Card 4 -->
   <div class="p-6 border-b-2 border-l-2 rounded-[20px] border-[#DF3636] shadow-lg bg-white">
     <div class="flex items-center mb-4">
       <div class="w-14 h-14 bg-[#FFE9E9] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#DF3636]">4</div>
-      <div class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#DF3636] to-transparent rounded"></div>
+      <div class="flex-1 h-1  bg-gradient-to-r from-[#DF3636] to-transparent rounded"></div>
     </div>
     <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
     <p class="text-[#6F7B88] text-[14px] leading-[150%]">
@@ -546,7 +546,7 @@
   <div class="p-6 border-b-2 border-r-2 rounded-[20px] border-[#7451FD] shadow-lg bg-white">
     <div class="flex items-center mb-4">
       <div class="w-14 h-14 bg-[#F4F1FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#7451FD]">5</div>
-      <div class="flex-1 h-1 ml-3 bg-gradient-to-r from-[#7451FD] to-transparent rounded"></div>
+      <div class="flex-1 h-1  bg-gradient-to-r from-[#7451FD] to-transparent rounded"></div>
     </div>
     <h4 class="text-[#38435C] font-semibold text-[20px] mb-2">Journey Title will be here</h4>
     <p class="text-[#6F7B88] text-[14px] leading-[150%]">
@@ -560,101 +560,101 @@
 
     <!--Products of our students part by Nayemur Rashid -->
 
-    <section class="py-16 px-4 sm:px-6 lg:px-12 max-w-305 mx-auto">
-      <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl lg:text-6xl font-bold">
+    <section class="px-4 py-16 mx-auto sm:px-6 lg:px-12 max-w-305">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl lg:text-6xl">
           Projects of
           <span class="text-[#DF3636] italic">Our Students</span>
         </h2>
-        <p class="text-gray-400 mt-4 text-l">
+        <p class="mt-4 text-gray-400 text-l">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
           nunc sodales arcu mi ut volutpat lobortis.
         </p>
       </div>
-      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-4">
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-1.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-2.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-3.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-4.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-5.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-6.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-7.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-8.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
       </div>
-      <div class="text-center text-white mt-12">
+      <div class="mt-12 text-center text-white">
         <button
           class="bg-[#DF3636] hover:bg-red-300 hover:text-black transition px-8 py-3 rounded-xl font-semibold"
         >
@@ -664,14 +664,14 @@
       </div>
     </section>
 
-    <section class="py-16 px-4 max-w-6xl mx-auto">
+    <section class="max-w-6xl px-4 py-16 mx-auto">
       <!-- Heading -->
-      <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+      <div class="mb-10 text-center">
+        <h2 class="mb-3 text-3xl font-bold text-gray-900 md:text-4xl">
           Our Students
-          <span class="text-red-500 italic">Shared Their Stories</span>
+          <span class="italic text-red-500">Shared Their Stories</span>
         </h2>
-        <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
+        <p class="max-w-xl mx-auto text-sm leading-relaxed text-gray-500">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
           nunc sodales arcu mi ut volutpat lobortis.
@@ -684,26 +684,26 @@
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
-              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -714,7 +714,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -724,34 +724,34 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo-->
-              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -762,7 +762,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -772,34 +772,34 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo -->
-              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -810,7 +810,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -820,34 +820,34 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
-              class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-row"
+              class="flex flex-row overflow-hidden bg-white shadow-md rounded-2xl"
               style="border: 1.5px solid #e0eef8; height: 200px"
             >
               <!-- Photo-->
-              <div class="pl-2 py-3" style="width: 130px; min-width: 130px">
+              <div class="py-3 pl-2" style="width: 130px; min-width: 130px">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -858,7 +858,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -868,8 +868,8 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
@@ -881,14 +881,14 @@
 
     <!-- career section start (Hamim) -->
     <section
-      class="items-center mb-10 bg-no-repeat bg-cover bg-center"
+      class="items-center mb-10 bg-center bg-no-repeat bg-cover"
       style="background-image: url(&quot;./images/career-background.png&quot;)"
     >
       <div
         class="container border-2 border-primary bg-white rounded-2xl py-16 px-4 shadow-[0px_4px_40px_0px_rgba(216,108,108,0.25)]"
       >
         <div
-          class="lg:pl-15 text-start grid lg:grid-cols-2 gap-12 items-center"
+          class="grid items-center gap-12 lg:pl-15 text-start lg:grid-cols-2"
         >
           <div class="">
             <h1
@@ -898,14 +898,14 @@
               <span class="italic text-red-500">Start Your Career</span>
             </h1>
 
-            <p class="mt-6 text-gray-600 leading-relaxed">
+            <p class="mt-6 leading-relaxed text-gray-600">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
             </p>
 
             <div
-              class="mt-4 inline-flex items-center gap-2 bg-red-100 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-sm font-medium shadow-sm"
+              class="inline-flex items-center gap-2 px-4 py-2 mt-4 text-sm font-medium text-red-500 bg-red-100 rounded-full shadow-sm hover:bg-red-500 hover:text-white"
             >
               🚨 Limited Seats Available
             </div>
@@ -922,7 +922,7 @@
           </div>
 
           <div
-            class="w-full sm:w-4/5 lg:max-w-md p-8 mx-auto bg-white animated-border-box shadow-xl rounded-2xl lg:mx-0"
+            class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0"
           >
             <div class="bg-white rounded-[21px] p-8">
               <h2 class="text-2xl font-semibold text-center text-gray-800">
@@ -982,19 +982,19 @@
 
     <!-- Frequently asked Questions start -->
     <section class="">
-      <div class="faq-wrapper container py-20">
+      <div class="container py-20 faq-wrapper">
         <!-- Left Image -->
         <img
           src="./images/faq1.png"
           alt="left design"
-          class="hidden lg:block absolute bottom-0 md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56"
+          class="absolute bottom-0 hidden lg:block md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56"
         />
 
         <!-- Right Image -->
         <img
           src="./images/faq2.png"
           alt="right design"
-          class="hidden lg:block absolute bottom-0 md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56"
+          class="absolute bottom-0 hidden lg:block md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56"
         />
 
         <div class="faq-header">
