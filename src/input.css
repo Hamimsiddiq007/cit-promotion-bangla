@@ -18,7 +18,7 @@
 }
 
 .header-text {
-  @apply xs:text-2xl  lg:text-4xl xl:text-[56px] leading-tight font-Inter font-extrabold pb-3;
+  @apply  text-3xl  lg:text-4xl xl:text-[56px] leading-tight font-Inter font-extrabold pb-3;
 }
 
 .title-text {

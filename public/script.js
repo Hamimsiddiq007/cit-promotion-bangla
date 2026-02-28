@@ -31,28 +31,27 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const items = document.querySelectorAll(".accordion-item");
-
 items.forEach((item, index) => {
   item.querySelector(".accordion-header").addEventListener("click", () => {
     const isActive = item.classList.contains("active");
 
-    // age sob remove
+    // আগে সব close
     items.forEach((i) => i.classList.remove("active"));
 
-    // jodi age active chilo, tahole ar kichu korbo na (close hoye jabe)
+    // যদি আগেই active থাকে → কিছু করবো না (close হয়ে যাবে)
     if (isActive) return;
 
-    // current item open
+    // সব screen এ current item open হবে
     item.classList.add("active");
 
-    // pair item open
-    if (index % 2 === 0 && items[index + 1]) {
-      items[index + 1].classList.add("active");
-    }
-    if (index % 2 === 1 && items[index - 1]) {
-      items[index - 1].classList.add("active");
+    // 👉 শুধু sm বা তার উপরে হলে pair open হবে
+    if (window.innerWidth >= 640) {
+      if (index % 2 === 0 && items[index + 1]) {
+        items[index + 1].classList.add("active");
+      }
+      if (index % 2 === 1 && items[index - 1]) {
+        items[index - 1].classList.add("active");
+      }
     }
   });
 });
-
-
