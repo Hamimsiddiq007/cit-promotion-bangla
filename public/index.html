@@ -81,7 +81,7 @@
       </nav>
 
       <section
-        class="hero-section bg-no-repeat bg-cover"
+        class="bg-no-repeat bg-cover hero-section"
         style="background-image: url(&quot;./images/Hero.png&quot;)"
       >
         <div class="container">
@@ -122,9 +122,27 @@
               </p>
 
               <div class="flex-buttons">
-                <button class="btn-primary">
+                <button
+                  class="bg-[#DF3636] rounded-[10px] flex items-center gap-2 py-4.25 px-4 font-Roboto font-medium text-[18px] leading-[120%] text-white "
+                >
                   CTA Label Here
-                  <img src="./images/Hero/hero-btn3.png" alt="" />
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6L16 12L21 8L19 18H5L3 8L8 12L12 6Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </button>
                 <button class="btn-secondary">
                   Download Curriculum
@@ -136,31 +154,46 @@
             <div class="hero-right">
               <div class="animated-border-box">
                 <div class="form-content">
-                  <h2 class="form-title">Book Your Seat Now</h2>
-                  <p class="form-subtitle">
+                  <h2 class="text-center form-title">Book Your Seat Now</h2>
+                  <p class="text-center form-subtitle">
                     Start building your professional career for free
                   </p>
 
                   <div class="input-group">
                     <label>Your Full Name</label>
-                    <div class="input-field">
-                      <img src="./images/user-icon.png" alt="" />
+                    <div
+                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                    >
+                      <i class="fa-regular fa-user"></i>
                       <input type="text" placeholder="Enter Here" />
                     </div>
                   </div>
 
                   <div class="input-group">
                     <label>Email Address</label>
-                    <div class="input-field">
-                      <img src="./images/mail-icon.png" alt="" />
+                    <div
+                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                    >
+                      <i class="fa-regular fa-envelope"></i>
                       <input type="email" placeholder="Enter Here" />
                     </div>
                   </div>
 
                   <div class="input-group">
                     <label>Phone Number</label>
-                    <div class="input-field">
-                      <img src="./images/phone-icon.png" alt="" />
+                    <div
+                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                    >
+                      <i class="fa-solid fa-phone-volume"></i>
+                      <input type="tel" placeholder="Enter Here" />
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label>Career Goals</label>
+                    <div
+                      class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                    >
+                      <i class="fa-solid fa-award"></i>
                       <input type="tel" placeholder="Enter Here" />
                     </div>
                   </div>
@@ -180,9 +213,9 @@
       </section>
     </header>
 
-    <section class="relative overflow-clip ">
+    <section class="relative overflow-clip">
       <img
-        class="absolute hidden md:block top-1/2 left-1/2 -translate-1/2 max-w-full 3xl:w-400 h-full object-contain -z-10"
+        class="absolute hidden object-contain h-full max-w-full md:block top-1/2 left-1/2 -translate-1/2 3xl:w-400 -z-10"
         src="./images/round.png"
         alt=""
       />
@@ -200,19 +233,19 @@
             </span>
           </h1>
         </div>
-        <p class="title-text pb-10 md:pb-16">
+        <p class="pb-10 title-text md:pb-16">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere <br class="hidden md:block" />
           maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut
           volutpat lobortis.
         </p>
 
-        <div class="relative flex justify-center items-center">
+        <div class="relative flex items-center justify-center">
           <div
-            class="w-4/5 xl:w-full mask-auto aspect-video rounded-xl border-2 border-primary/40"
+            class="w-4/5 border-2 xl:w-full mask-auto aspect-video rounded-xl border-primary/40"
           >
             <div
-              class="video-thumbnail relative h-full w-full"
+              class="relative w-full h-full video-thumbnail"
               onclick="playVideo(this)"
             >
               <img
@@ -221,20 +254,20 @@
               />
 
               <div
-                class="custom-play absolute top-1/2 left-1/2 -translate-1/2 text-red-500 w-12 sm:w-16 aspect-square cursor-pointer"
+                class="absolute w-12 text-red-500 cursor-pointer custom-play top-1/2 left-1/2 -translate-1/2 sm:w-16 aspect-square"
               >
                 <span
-                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75 z-0"
+                  class="absolute z-0 inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-primary"
                 ></span>
                 <div
-                  class="w-full h-full bg-white rounded-full flex items-center justify-center text-2xl sm:text-3xl aspect-square z-10 relative"
+                  class="relative z-10 flex items-center justify-center w-full h-full text-2xl bg-white rounded-full sm:text-3xl aspect-square"
                 >
                   <i class="fa-solid fa-play"></i>
                 </div>
               </div>
             </div>
             <img
-              class="absolute top-1/2 left-1/2 md:hidden -translate-1/2 max-w-full h-full object-contain -z-10"
+              class="absolute object-contain h-full max-w-full top-1/2 left-1/2 md:hidden -translate-1/2 -z-10"
               src="./images/round.png"
               alt=""
             />
@@ -289,11 +322,11 @@
       </div>
     </section>
 
-    <section class="py-10 font-Inter relative overflow-clip">
+    <section class="relative py-10 font-Inter overflow-clip">
       <div
-        class="absolute w-[200%] top-1/12 left-1/2 -translate-y-[10%] sm:translate-y-0 -translate-x-1/2 aspect-video md:aspect-square sm:aspect-2/1 bg-linear-to-t from-white from-80% sm:from-90% to-[#fbdcdc] rounded-t-full z-0 "
+        class="absolute w-[200%] top-1/12 left-1/2 -translate-y-[10%] sm:translate-y-0 -translate-x-1/2 aspect-video md:aspect-square sm:aspect-2/1 bg-linear-to-t from-white from-80% sm:from-90% to-[#fbdcdc] rounded-t-full z-0"
       ></div>
-      <div class="module-container container">
+      <div class="container module-container">
         <!-- Background Curve -->
 
         <div class="relative z-10">
@@ -303,16 +336,14 @@
               Here Will Be
               <span class="text-[#DF3636] italic">Course Module</span>
             </h2>
-            <p
-              class="titel-text "
-            >
+            <p class="titel-text">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
             </p>
           </div>
 
-          <div class="accordion grid sm:grid-cols-2 gap-5">
-            <div class="accordion-item border-red-300">
+          <div class="grid gap-5 accordion sm:grid-cols-2">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -327,7 +358,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-blue-300">
+            <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgBlue.png" alt="msg" />
@@ -342,7 +373,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-green-300">
+            <div class="border-green-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgGreen.png" alt="msg" />
@@ -357,7 +388,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-orange-300">
+            <div class="border-orange-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgYello.png" alt="msg" />
@@ -371,7 +402,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-            <div class="accordion-item border-red-300">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -386,7 +417,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-blue-300">
+            <div class="border-blue-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgBlue.png" alt="msg" />
@@ -400,7 +431,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
-            <div class="accordion-item border-green-300">
+            <div class="border-green-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgGreen.png" alt="msg" />
@@ -415,7 +446,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-red-300">
+            <div class="border-red-300 accordion-item">
               <div class="accordion-header">
                 <div class="accordion-title">
                   <img src="./images/msgRed.png" alt="msg" />
@@ -432,7 +463,7 @@
           </div>
 
           <!-- Load More Button -->
-          <div class="text-center mt-12">
+          <div class="mt-12 text-center">
             <button class="module-button">
               Load More <i class="fa-solid fa-angle-down"></i>
             </button>
@@ -442,7 +473,7 @@
 
       <!-- Eye Catchy Banner -->
       <div
-        class="relative w-full h-40 sm:h-80 md:h-96 bg-cover bg-center flex items-center justify-center text-center overflow-hidden"
+        class="relative flex items-center justify-center w-full h-40 overflow-hidden text-center bg-center bg-cover sm:h-80 md:h-96"
         style="
           background-image: url(&quot;./images/graphic_design_banner.png&quot;);
         "
@@ -450,7 +481,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
 
         <div class="relative z-10 px-4">
-          <h2 class="text-white text-xl sm:text-3xl md:text-4xl font-bold">
+          <h2 class="text-xl font-bold text-white sm:text-3xl md:text-4xl">
             Eye Catchy Graphic Design Banner
           </h2>
         </div>
@@ -459,10 +490,10 @@
 
     <!------------------  Journey_Roadmap -------------- -->
     <section
-      class="py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32 bg-cover bg-bottom bg-no-repeat"
+      class="py-8 bg-bottom bg-no-repeat bg-cover sm:py-12 md:py-16 lg:py-24 xl:py-32"
       style="background-image: url(&quot;./images/cardBg.png&quot;)"
     >
-      <div class="container mx-auto px-4">
+      <div class="container px-4 mx-auto">
         <!-- Header -->
         <div class="text-center w-full lg:w-[75%] mx-auto mb-12">
           <h1 class="header-text">
@@ -479,9 +510,9 @@
 
         <!-- Grid -->
         <!-- Row 1 -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-6">
+        <div class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-3 lg:grid-cols-3">
           <!-- Card 1 -->
-          <div class="card p-6 before:from-blue-500 shadow-lg bg-white">
+          <div class="p-6 bg-white shadow-lg card before:from-blue-500">
             <div class="flex items-center md:mb-1 lg:mb-4">
               <div
                 class="w-14 h-14 bg-[#F1F5FF] rounded-[10px] flex justify-center items-center text-[28px] font-semibold text-[#4285FA]"
@@ -545,7 +576,7 @@
         </div>
 
         <!-- Row 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
           <!-- Card 4 -->
           <div
             class="card p-6 2 rounded-[20px] before:from-[#DF3636] shadow-lg bg-white"
@@ -597,8 +628,8 @@
 
     <!--Products of our students part by Nayemur Rashid -->
 
-    <section class="py-16 px-4 sm:px-6 lg:px-12 max-w-305 mx-auto">
-      <div class="text-center max-w-3xl mx-auto">
+    <section class="px-4 py-16 mx-auto sm:px-6 lg:px-12 max-w-305">
+      <div class="max-w-3xl mx-auto text-center">
         <h2 class="header-text">
           Projects of
           <span class="text-[#DF3636] italic">Our Students</span>
@@ -609,89 +640,89 @@
           nunc sodales arcu mi ut volutpat lobortis.
         </p>
       </div>
-      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-4">
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-1.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-2.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-3.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-4.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-5.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-6.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-7.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl p-4 hover:scale-105 transition duration-300"
+          class="p-4 transition duration-300 bg-gray-100 rounded-2xl hover:scale-105"
         >
           <img
             src="./images/Image-8.png"
-            class="rounded-xl w-full h-48 object-cover"
+            class="object-cover w-full h-48 rounded-xl"
             alt="Project"
           />
-          <h3 class="text-black mt-4 font-semibold">Brochure Design</h3>
+          <h3 class="mt-4 font-semibold text-black">Brochure Design</h3>
         </div>
       </div>
-      <div class="text-center text-white mt-12">
+      <div class="mt-12 text-center text-white">
         <button
           class="bg-[#DF3636] hover:bg-red-300 hover:text-black transition px-8 py-3 rounded-xl font-semibold"
         >
@@ -701,12 +732,12 @@
       </div>
     </section>
 
-    <section class="py-16 px-4 mx-auto overflow-x-clip">
+    <section class="px-4 py-16 mx-auto overflow-x-clip">
       <!-- Heading -->
-      <div class="text-center mb-10">
+      <div class="mb-10 text-center">
         <h2 class="header-text">
           Our Students
-          <span class="text-red-500 italic">Shared Their Stories</span>
+          <span class="italic text-red-500">Shared Their Stories</span>
         </h2>
         <p class="title-text">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
@@ -721,26 +752,31 @@
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-blue-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-blue-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo -->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -751,7 +787,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -760,34 +796,39 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo-->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -798,7 +839,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -807,34 +848,39 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-green-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-green-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo -->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -845,7 +891,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -854,34 +900,39 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-yellow-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-yellow-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo-->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -892,7 +943,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -901,34 +952,39 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-orange-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-orange-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo-->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -939,7 +995,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -948,34 +1004,39 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div
+<<<<<<< HEAD
               class="bg-red-50 rounded-2xl shadow-md overflow-hidden flex flex-row"
               style="height: 200px"
+=======
+              class="flex flex-row overflow-hidden shadow-md bg-red-50 rounded-2xl"
+              style="border: 1.5px solid #e0eef8; height: 200px"
+>>>>>>> 5f110bc4781be37563577efd15a002f9ad5eddaf
             >
               <!-- Photo-->
-              <div class="pl-2 py-3 w-1/3 aspect-square">
+              <div class="w-1/3 py-3 pl-2 aspect-square">
                 <img
                   src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=500&fit=crop&crop=face"
                   alt="Mahamud Azim"
-                  class="w-full h-full object-cover rounded-xl"
+                  class="object-cover w-full h-full rounded-xl"
                 />
               </div>
 
               <!-- Content RIGHT -->
               <div
-                class="flex flex-col justify-between px-4 py-4 flex-1 overflow-hidden"
+                class="flex flex-col justify-between flex-1 px-4 py-4 overflow-hidden"
               >
                 <!-- Stars -->
                 <div>
                   <div class="flex items-center gap-1 mb-2">
-                    <span class="font-bold text-gray-800 text-base">5.0</span>
+                    <span class="text-base font-bold text-gray-800">5.0</span>
                     <div class="flex gap-0.5 text-amber-400 text-sm">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -986,7 +1047,7 @@
                   </div>
 
                   <!-- Review Text -->
-                  <p class="text-gray-600 text-xs leading-relaxed line-clamp-5">
+                  <p class="text-xs leading-relaxed text-gray-600 line-clamp-5">
                     Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                     ultricies eget amet faucibus diam. Dictum pharetra nisi
                     donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -995,8 +1056,8 @@
 
                 <!-- Name & Batch -->
                 <div>
-                  <p class="font-bold text-gray-900 text-sm">Mahamud Azim</p>
-                  <p class="text-gray-500 text-xs">Batch - DMT 2507</p>
+                  <p class="text-sm font-bold text-gray-900">Mahamud Azim</p>
+                  <p class="text-xs text-gray-500">Batch - DMT 2507</p>
                 </div>
               </div>
             </div>
@@ -1008,31 +1069,31 @@
 
     <!-- career section start (Hamim) -->
     <section
-      class="items-center mb-10 bg-no-repeat bg-cover bg-center my-1"
+      class="items-center my-1 mb-10 bg-center bg-no-repeat bg-cover"
       style="background-image: url(&quot;./images/career-background.png&quot;)"
     >
       <div
         class="container border-2 border-primary bg-white rounded-2xl py-16 px-4 shadow-[0px_4px_40px_0px_rgba(216,108,108,0.25)]"
       >
         <div
-          class="lg:pl-15 text-start grid lg:grid-cols-2 gap-12 items-center"
+          class="grid items-center gap-12 lg:pl-15 text-start lg:grid-cols-2"
         >
           <div class="">
             <h1
               class="text-4xl font-bold leading-tight text-gray-800 lg:text-5xl font-Inter"
             >
               Ready To <br />
-              <span class="italic text-red-500">Start Your Career</span>
+              <span class="italic text-[#DF3636]">Start Your Career</span>
             </h1>
 
-            <p class="mt-6 text-gray-600 leading-relaxed font-Roboto">
+            <p class="mt-6 leading-relaxed text-gray-600 font-Roboto">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
             </p>
 
             <div
-              class="mt-4 inline-flex items-center gap-2 bg-red-100 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-full text-sm font-medium shadow-sm"
+              class="inline-flex items-center gap-2 px-4 duration-200 py-2.5 mt-4 text-sm font-medium text-red-500 bg-[#FFFFFF] rounded-full shadow-xl hover:bg-red-500 hover:text-white"
             >
               🚨 Limited Seats Available
             </div>
@@ -1049,51 +1110,65 @@
           </div>
 
           <div
-            class="w-full sm:w-4/5 lg:max-w-md p-8 mx-auto bg-white animated-border-box shadow-xl rounded-2xl lg:mx-0 font-Inter"
+            class="w-full p-8 mx-auto bg-white shadow-xl sm:w-4/5 lg:max-w-md animated-border-box rounded-2xl lg:mx-0 font-Inter"
           >
             <div class="bg-white rounded-[21px] p-8">
               <h2 class="text-2xl font-semibold text-center text-gray-800">
                 Book Your Seat Now
               </h2>
 
-              <p class="mt-2 mb-6 text-sm text-center text-gray-500">
+              <p class="mt-2 mb-6 text-sm text-center text-gray-500 font-Inter">
                 Start building your professional career for free
               </p>
 
               <form class="space-y-4">
-                <label class="" for="text">Your Full Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter Here"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500"
-                />
+                <div class="input-group">
+                  <label>Your Full Name</label>
+                  <div
+                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter Here" />
+                  </div>
+                </div>
 
-                <label for="emai">Email Address</label>
-                <input
-                  type="email"
-                  placeholder="Enter Here"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500"
-                />
+                <div class="input-group">
+                  <label>Email Address</label>
+                  <div
+                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                  >
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Here" />
+                  </div>
+                </div>
 
-                <label for="number">Phone Number</label>
-                <input
-                  type="tel"
-                  placeholder="Enter Here"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500"
-                />
-
-                <label for="">Career Goals</label>
-                <input
-                  type="text"
-                  placeholder="Enter Here"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500"
-                />
+                <div class="input-group">
+                  <label>Phone Number</label>
+                  <div
+                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                  >
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input type="tel" placeholder="Enter Here" />
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label>Career Goals</label>
+                  <div
+                    class="input-field text-[#6F7B88] bg-[#FFF3F3] hover:bg-white group hover:text-[#DF3636]"
+                  >
+                    <i class="fa-solid fa-award"></i>
+                    <input type="tel" placeholder="Enter Here" />
+                  </div>
+                </div>
 
                 <button
                   type="submit"
                   class="w-full py-3 font-semibold text-white transition duration-300 bg-red-500 rounded-lg hover:bg-red-600"
                 >
-                  CTA Label Here →
+                  CTA Label Here
+                  <span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </span>
                 </button>
               </form>
 
@@ -1109,19 +1184,19 @@
 
     <!-- Frequently asked Questions start -->
     <section class="">
-      <div class="faq-wrapper container py-20">
+      <div class="container py-20 faq-wrapper">
         <!-- Left Image -->
         <img
           src="./images/faq1.png"
           alt="left design"
-          class="hidden lg:block absolute bottom-0 md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56"
+          class="absolute bottom-0 hidden lg:block md:-left-6 lg:left-0 xl:-left-8 md:w-32 lg:w-38 xl:w-56"
         />
 
         <!-- Right Image -->
         <img
           src="./images/faq2.png"
           alt="right design"
-          class="hidden lg:block absolute bottom-0 md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56"
+          class="absolute bottom-0 hidden lg:block md:-right-6 lg:-right-1 xl:-right-16 md:w-32 lg:w-38 xl:w-56"
         />
 
         <div class="faq-header">
@@ -1220,7 +1295,7 @@
         <div
           class="flex flex-col items-center justify-between top-footer lg:flex-row gap-y-16"
         >
-          <img src="./images/footer-logo.png" alt="logo" />
+          <img src="./images/South-Asia-mnemonic_2 1.png" alt="logo" />
           <div class="flex flex-col items-center gap-2 text-center quires">
             <p class="pb-2 text-base font-semibold text-white font-Roboto">
               For Any Queries, Feel Free To Contact Us
@@ -1254,27 +1329,77 @@
             <p class="font-semibold text-white font-Roboto">Download App</p>
             <div class="flex items-center gap-4">
               <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="qr">
+                <div class="w-10 h-10 qr">
                   <img
-                    class="w-7 aspect-square"
-                    src="./images/qr.png"
+                    class="aspect-square"
+                    src="./images/qr-code-svgrepo-com 1.png"
                     alt="qr"
                   />
                 </div>
-                <div class="logo">
-                  <i class="text-3xl fa-brands fa-google-play"></i>
+                <div class="w-10 h-10 logo">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.8736 13.7196C25.2269 11.1206 17.7688 6.94727 6.20063 0.469996C5.42071 -0.0450828 4.52336 -0.112583 3.74805 0.14984L23.5957 19.9975L29.8736 13.7196Z"
+                      fill="#32BBFF"
+                    />
+                    <path
+                      d="M3.74711 0.150391C3.6018 0.199609 3.46039 0.258985 3.32516 0.330703C2.46899 0.793829 1.83984 1.685 1.83984 2.81211V37.1841C1.83984 38.3112 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8462L23.5948 19.9981L3.74711 0.150391Z"
+                      fill="#32BBFF"
+                    />
+                    <path
+                      d="M23.5943 19.998L3.74609 39.8461C4.52164 40.1105 5.41899 40.0482 6.19915 39.5256C17.4178 33.2435 24.7918 29.1196 29.4923 26.4985C29.6232 26.425 29.7514 26.3531 29.8781 26.282L23.5943 19.998Z"
+                      fill="#32BBFF"
+                    />
+                    <path
+                      d="M1.83984 19.998V37.184C1.83984 38.3111 2.46891 39.2023 3.32516 39.6654C3.46016 39.737 3.60149 39.7966 3.74664 39.8461L23.5948 19.998H1.83984Z"
+                      fill="#2C9FD9"
+                    />
+                    <path
+                      d="M6.19876 0.470931C5.27258 -0.140632 4.18039 -0.12321 3.32422 0.331165L23.2926 20.2996L29.8717 13.7206C25.225 11.1216 17.7669 6.94821 6.19876 0.470931Z"
+                      fill="#29CC5E"
+                    />
+                    <path
+                      d="M23.2928 19.6973L3.32422 39.6657C4.18047 40.12 5.27258 40.1462 6.19876 39.5259C17.4174 33.2439 24.7914 29.1199 29.4919 26.4988C29.6228 26.4253 29.751 26.3534 29.8777 26.2823L23.2928 19.6973Z"
+                      fill="#D93F21"
+                    />
+                    <path
+                      d="M38.16 19.9979C38.16 19.0456 37.6794 18.0845 36.727 17.5515C36.727 17.5515 34.9458 16.5577 29.4862 13.5039L22.9922 19.9979L29.4925 26.4983C34.8922 23.4665 36.7269 22.4442 36.7269 22.4442C37.6794 21.9113 38.16 20.9503 38.16 19.9979Z"
+                      fill="#FFD500"
+                    />
+                    <path
+                      d="M36.727 22.4445C37.6794 21.9115 38.16 20.9504 38.16 19.998H22.9922L29.4925 26.4985C34.8923 23.4667 36.727 22.4445 36.727 22.4445Z"
+                      fill="#FFAA00"
+                    />
+                  </svg>
                 </div>
               </div>
               <div class="flex items-center gap-2 p-3 bg-white rounded-xl">
-                <div class="qr">
+                <div class="w-10 h-10 qr">
                   <img
-                    class="w-7 aspect-square"
-                    src="./images/qr.png"
+                    class="aspect-square"
+                    src="./images/qr-code-svgrepo-com 1.png"
                     alt="qr"
                   />
                 </div>
-                <div class="logo">
-                  <i class="text-3xl fa-brands fa-apple"></i>
+                <div class="w-10 h-10 logo">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M35.1276 27.7244C34.3016 29.5564 33.9036 30.3744 32.8396 31.9944C31.3556 34.2544 29.2596 37.0704 26.6656 37.0944C24.3616 37.1144 23.7696 35.5944 20.6396 35.6124C17.5116 35.6284 16.8596 37.1224 14.5536 37.1004C11.9596 37.0764 9.97363 34.5344 8.48763 32.2724C4.33363 25.9524 3.89963 18.5324 6.46163 14.5864C8.28163 11.7844 11.1556 10.1444 13.8556 10.1444C16.6056 10.1444 18.3356 11.6524 20.6076 11.6524C22.8136 11.6524 24.1576 10.1404 27.3376 10.1404C29.7376 10.1404 32.2856 11.4504 34.0996 13.7104C28.1556 16.9684 29.1196 25.4564 35.1276 27.7244ZM24.9256 7.61639C26.0796 6.13239 26.9576 4.04039 26.6396 1.90039C24.7516 2.03039 22.5456 3.23039 21.2556 4.79639C20.0876 6.21639 19.1216 8.32239 19.4956 10.3704C21.5556 10.4324 23.6876 9.20239 24.9256 7.61639Z"
+                      fill="#1E1E1F"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
