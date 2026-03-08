@@ -37,7 +37,6 @@ if (items.length > 0) {
 }
 
 items.forEach((item) => {
-
   // এখন পুরো accordion-item এ click হবে
   item.addEventListener("click", () => {
     const isActive = item.classList.contains("active");
@@ -51,7 +50,6 @@ items.forEach((item) => {
     // এখন current item open
     item.classList.add("active");
   });
-
 });
 const faqItems = document.querySelectorAll(".faq-item");
 
@@ -62,7 +60,6 @@ if (faqItems.length > 0) {
 }
 
 faqItems.forEach((item) => {
-
   // এখন পুরো faq-item এ click
   item.addEventListener("click", () => {
     const isOpen = item.classList.contains("open");
@@ -80,7 +77,6 @@ faqItems.forEach((item) => {
     item.classList.add("open");
     setMaxHeight(item);
   });
-
 });
 
 // height smooth animation এর জন্য
@@ -95,3 +91,10 @@ function setMaxHeight(item, open = true) {
     answer.style.maxHeight = null;
   }
 }
+
+const lenis = new Lenis({
+  duration: 1.2,
+  smooth: true,
+  smoothTouch: true,
+});
+
