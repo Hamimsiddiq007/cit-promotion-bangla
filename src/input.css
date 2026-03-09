@@ -17,7 +17,7 @@
 
 html {
   scroll-behavior: auto;
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Hind Siliguri", sans-serif !important;
 }
 
 body {
