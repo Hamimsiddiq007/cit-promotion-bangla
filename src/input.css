@@ -30,15 +30,15 @@ body {
 }
 
 .header-text {
-  @apply text-3xl  lg:text-4xl xl:text-[56px] leading-tight font-extrabold pb-3;
+  @apply text-3xl  lg:text-3xl xl:text-[54px] font-siliguri leading-tight font-extrabold pb-3;
 }
 
 .title-text {
-  @apply text-xs xs:text-sm sm:text-base md:text-lg font-sans text-secondary text-center max-w-200 mx-auto;
+  @apply text-xs xs:text-sm sm:text-base md:text-lg font-siliguri text-secondary text-center max-w-200 mx-auto;
 }
 /* Navber */
 ul li .nav-item {
-  @apply text-[16px] font-semibold leading-[150%];
+  @apply text-[16px] font-siliguri font-semibold leading-[150%];
 }
 ul li .nav-item:hover {
   @apply text-primary transition duration-300;
@@ -48,7 +48,7 @@ ul li .nav-item:hover {
   color: #ffffff;
   font-size: 16px;
   line-height: 150%;
-  font-family: var(--font-sans);
+  font-family: "Hind Siliguri", serif;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@ ul li .nav-item:hover {
   }
 
   .cta-small {
-    @apply bg-[#F9FAFB] py-2 px-4 rounded-[10px] flex items-center gap-2 text-[14px] cursor-pointer;
+    @apply bg-[#F9FAFB] py-2 px-4 font-siliguri rounded-[10px] flex items-center gap-2 text-[14px] cursor-pointer;
   }
 
   /* Status Colors */
@@ -128,20 +128,20 @@ ul li .nav-item:hover {
 
   /* Description */
   .Hero-description {
-    @apply text-[18px] font-Roboto leading-[1.6] text-[#475467] mb-8;
+    @apply text-[18px] font-siliguri leading-[1.6] text-[#475467] mb-8;
   }
 
   /* Main Action Buttons */
   .flex-buttons {
-    @apply flex font-Roboto gap-4;
+    @apply flex font-siliguri gap-4;
   }
 
   .btn-primary {
-    @apply bg-[#E33B32] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer;
+    @apply bg-[#E33B32] text-white border-none py-3.5 px-7 rounded-[10px] font-siliguri font-semibold flex items-center gap-2.5 cursor-pointer;
   }
 
   .btn-secondary {
-    @apply bg-[#1D2939] text-white border-none py-3.5 px-7 rounded-[10px] font-semibold flex items-center gap-2.5 cursor-pointer;
+    @apply bg-[#1D2939] text-white border-none py-3.5 px-7 rounded-[10px] font-siliguri font-semibold flex items-center gap-2.5 cursor-pointer;
   }
 }
 
@@ -166,19 +166,19 @@ ul li .nav-item:hover {
   }
 
   .form-title {
-    @apply text-[21px] font-Inter font-bold mb-2;
+    @apply text-[21px] font-siliguri font-bold mb-2;
   }
 
   .form-subtitle {
-    @apply text-[14px] font-Inter text-[#667085] mb-6;
+    @apply text-[14px] font-siliguri text-[#667085] mb-6;
   }
 
   .input-group {
-    @apply mb-4 font-Inter text-left;
+    @apply mb-4 font-siliguri text-left;
   }
 
   .input-group label {
-    @apply block text-[14px] font-Inter font-medium mb-1.5;
+    @apply block text-[14px] font-siliguri font-medium mb-1.5;
   }
 
   .input-field {
@@ -190,10 +190,10 @@ ul li .nav-item:hover {
   }
 
   .submit-btn {
-    @apply w-full bg-[#E33B32] text-white font-Roboto border-none p-3.5 rounded-lg font-semibold cursor-pointer mt-2.5;
+    @apply w-full bg-[#E33B32] text-white font-siliguri border-none p-3.5 rounded-lg font-semibold cursor-pointer mt-2.5;
   }
   .footer-text {
-    @apply text-center text-[14px] font-Inter text-[#6F7B88] mt-6;
+    @apply text-center text-[14px] font-siliguri text-[#6F7B88] mt-6;
   }
 }
 
@@ -327,10 +327,12 @@ ul li .nav-item:hover {
 
   .Hero-title {
     font-size: 40px;
+    font-family: "Hind Siliguri", serif;
   }
 
   .Hero-description {
     font-size: 16px;
+    font-family: "Hind Siliguri", serif;
   }
 
   .Hero-ctabtn {
@@ -351,6 +353,7 @@ ul li .nav-item:hover {
 
   .form-content {
     padding: 24px 16px;
+    font-family: "Hind Siliguri", serif;
   }
 }
 
@@ -358,11 +361,13 @@ ul li .nav-item:hover {
 @media (max-width: 480px) {
   .Hero-title {
     font-size: 32px;
+    font-family: "Hind Siliguri", serif;
   }
 
   .top-tittle {
     font-size: 12px;
     padding: 6px 12px;
+    font-family: "Hind Siliguri", serif;
   }
 }
 /* -------------------------------------------------------------
@@ -370,7 +375,7 @@ ul li .nav-item:hover {
 ------------------------------------------------------------- */
 
 .card {
-  @apply rounded-lg  border-none relative z-10 bg-transparent   before:duration-1000 overflow-hidden before:absolute before:h-full before:w-full  before:-z-1 before:top-1/2 before:left-1/3 before:-translate-x-1/3 before:-translate-y-1/2 before:via-white  before:to-white shadow-md transition duration-300 hover:shadow-lg after:absolute after:h-[98%] after:w-[99%] after:-z-1 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-lg after:bg-white;
+  @apply rounded-lg  border-none relative z-10 bg-transparent before:duration-1000 overflow-hidden before:absolute before:h-full before:w-full  before:-z-1 before:top-1/2 before:left-1/3 before:-translate-x-1/3 before:-translate-y-1/2 before:via-white  before:to-white shadow-md transition duration-300 hover:shadow-lg after:absolute after:h-[98%] after:w-[99%] after:-z-1 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-lg after:bg-white;
 }
 
 /* ===================================
@@ -388,10 +393,10 @@ ul li .nav-item:hover {
 
 /* Button */
 .module-button {
-  @apply bg-[#DF3636] text-white px-8 py-3 rounded-lg shadow-md transition;
+  @apply bg-[#DF3636] text-white font-siliguri px-8 py-3 rounded-lg shadow-md transition;
 }
 .module-button:hover {
-  @apply bg-gradient-to-r from-[#DF3636] to-[#FF8079];
+  @apply bg-linear-to-r from-[#DF3636] to-[#FF8079];
 }
 
 /* From Uiverse.io by SivarajRathinam */
@@ -409,11 +414,11 @@ ul li .nav-item:hover {
   @apply flex justify-between items-center;
 }
 .accordion-header h1 {
-  @apply text-lg font-semibold font-Roboto;
+  @apply text-lg font-semibold font-siliguri;
 }
 
 .accordion-item .content p {
-  @apply text-sm font-Roboto text-black  p-0!;
+  @apply text-sm font-siliguri text-black  p-0!;
 }
 
 .accordion input[type="radio"] {
@@ -444,13 +449,13 @@ ul li .nav-item:hover {
 
 @layer footer {
   .address-card {
-    @apply flex flex-col items-center gap-2 text-center capitalize;
+    @apply flex flex-col font-siliguri items-center gap-2 text-center capitalize;
   }
   .address-title {
-    @apply text-white font-semibold font-Roboto;
+    @apply text-white font-semibold font-siliguri;
   }
   .address-details {
-    @apply text-gray font-Inter text-xs font-medium;
+    @apply text-gray font-siliguri text-xs font-medium;
   }
 }
 
@@ -492,13 +497,13 @@ ul li .nav-item:hover {
 
 /* ── Header ── */
 .faq-header {
-  font-family: "Inter", serif;
+  font-family: "Hind Siliguri", serif;
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
 .faq-title {
-  font-family: "Inter", serif;
+  font-family: "Hind Siliguri", serif;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: #111827;
@@ -508,11 +513,11 @@ ul li .nav-item:hover {
 
 .faq-title em {
   color: var(--coral);
-  font-style: italic;
+  font-family: "Hind Siliguri", serif;
 }
 
 .faq-subtitle {
-  font-family: "Inter", serif;
+  font-family: "Hind Siliguri", serif;
   color: #6b7280;
   font-size: 0.95rem;
   max-width: 36rem;
@@ -561,7 +566,7 @@ ul li .nav-item:hover {
 }
 
 .faq-question {
-  font-family: "Inter", serif;
+  font-family: "Hind Siliguri", serif;
   font-weight: 600;
   font-size: 0.875rem;
   color: #1f2937;
@@ -593,7 +598,7 @@ ul li .nav-item:hover {
 }
 
 .faq-answer p {
-  font-family: "Inter", serif;
+  font-family: "Hind Siliguri", serif;
   color: #6b7280;
   font-size: 0.875rem;
   line-height: 1.75;
