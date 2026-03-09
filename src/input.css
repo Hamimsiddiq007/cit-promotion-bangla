@@ -166,7 +166,7 @@ ul li .nav-item:hover {
   }
 
   .form-title {
-    @apply text-[24px] font-Inter font-bold mb-2;
+    @apply text-[21px] font-Inter font-bold mb-2;
   }
 
   .form-subtitle {
